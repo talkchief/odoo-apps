@@ -222,9 +222,11 @@ registry.category("phone_call_handlers").add(
 );
 
 class TalkChiefSystray extends Component {
+    // Handlers as arrow functions on `this`: Odoo 20 runs OWL 3, where a bare method name in a
+    // template is undefined; OWL 2 (Odoo 18 and 19) gives templates `this` too.
     static template = xml`
         <div class="o_nav_entry o_talkchief_systray" role="button" tabindex="0"
-             title="TalkChief" aria-label="TalkChief" t-on-click="toggle" t-on-keydown="onKeydown">
+             title="TalkChief" aria-label="TalkChief" t-on-click="() => this.toggle()" t-on-keydown="(ev) => this.onKeydown(ev)">
             <img src="/talkchief_phone/static/description/icon.png" alt="" style="width: 18px; height: 18px;"/>
         </div>`;
 
