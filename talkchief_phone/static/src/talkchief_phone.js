@@ -103,8 +103,11 @@ function ensurePanel() {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "6px 8px 6px 12px",
-        borderBottom: "1px solid rgba(0, 0, 0, 0.08)",
-        font: "600 13px/1.4 system-ui, sans-serif",
+        borderBottom: "1px solid #E5E7EB",
+        font: "600 14px/1.4 system-ui, sans-serif",
+        // Its own colours: Odoo's text colour (light grey in the dark theme) would vanish on white.
+        background: "#FFFFFF",
+        color: "#0B1F33",
     });
     const title = document.createElement("span");
     title.textContent = "TalkChief";
@@ -113,6 +116,7 @@ function ensurePanel() {
     close.className = "btn btn-link btn-sm";
     close.setAttribute("aria-label", "Hide TalkChief");
     close.textContent = "×";
+    Object.assign(close.style, { color: "#4B5563", fontSize: "18px", lineHeight: "1", textDecoration: "none" });
     close.addEventListener("click", () => setShown(false));
     bar.append(title, close);
 
