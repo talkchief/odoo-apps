@@ -2,7 +2,7 @@
 # Built and published by odoo-app/build.sh; see odoo-app/README.md.
 {
     "name": "TalkChief Phone",
-    "version": "20.0.1.1.0",
+    "version": "20.0.1.1.1",
     "category": "Productivity",
     "summary": "Call and answer with TalkChief from Odoo's top bar",
     "description": "Adds a TalkChief item to Odoo's top bar that shows the TalkChief calling panel (a TalkChief service), where agents sign in, make and answer calls. After the user opens it once, a phone number clicked in Odoo goes into the panel's dial pad. Nothing is stored in Odoo.",
@@ -10,6 +10,7 @@
     "website": "https://talkchief.io",
     "license": "OPL-1",
     "support": "support@talkchief.io",
+    "images": ["static/description/cover.png"],
     "depends": ["web"],
     "data": [],
     "assets": {
