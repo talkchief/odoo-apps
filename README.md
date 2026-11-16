@@ -3,7 +3,7 @@
 TalkChief in Odoo's top bar: make and answer TalkChief calls without leaving Odoo, and put any
 phone number you click into the TalkChief dial pad.
 
-- Module: `talkchief_phone` (version 19.0.1.1.2), no Python code.
+- Module: `talkchief_phone` (version 19.0.1.1.3), no Python code.
 - Setup guide: https://docs.talkchief.io/integrations/odoo
 - Website: https://talkchief.io
 
